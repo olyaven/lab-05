@@ -190,3 +190,18 @@ string playerLevel = points switch
 };
 
 Console.WriteLine(playerLevel);
+
+//---
+
+int number = 42;
+
+string result = number switch
+{
+    < 0 => "Отрицательное",
+    1 or 2 or 3 => "Маленькое число",
+    <= 9 => "Однозначное",
+    <= 99 => "Двузначное",
+    _ => "Трёхзначное или больше"
+};
+
+Console.WriteLine(result);
